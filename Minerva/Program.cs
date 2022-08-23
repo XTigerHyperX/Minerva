@@ -1,3 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
+using System.Threading.Tasks;
+using Minerva.Core;
 
-Console.WriteLine("Hello, World!");
+namespace Minerva
+{
+    internal static class Program
+    {
+        private static async Task Main()
+        {
+            await BasicCommands.GrabOutfitsWithShopHistory();
+            Console.ReadKey();
+        }
+    }
+}
+
